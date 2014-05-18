@@ -1018,6 +1018,22 @@ background-size: cover !important;
 color: white!important;
 }
 
+.banner{
+/*padding-top: 20em;*/
+background-image:  url("../images/bg2.jpg");
+background-size: cover !important;
+height: 8em;
+
+
+}
+
+.banner2{
+
+background: black;
+height: 8em;
+width: 100%;
+color: white!important;
+}
 .deafulttext{
 
 	color: white!important;
@@ -1186,10 +1202,33 @@ background-size: cover;
 	}
 
 	.portfolio{
-		color: #888;
+		color: white;
 	}
 
 	.modal-dialog{
 
 		margin-top: 50px!important;
 	}
+
+	.thinner{
+		padding: 0 !important;
+		margin: 0;
+	}
+
+	hr {
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+border: 0;
+border-top: 1px solid #eee;
+}
+
+
+.nomargin{
+
+	padding-top: 0px!important;
+}
+
+.row{
+	margin-top: 5em;
+	margin-bottom: 5em;
+}
