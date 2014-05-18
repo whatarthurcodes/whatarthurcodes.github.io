@@ -19,13 +19,14 @@
 
 	.wrapper
 	{
-		padding: 5em 0 5em 0;
+		padding: 3em 0 3em 0;
 		text-align: center;
 	}
 	
 		.wrapper-first
 		{
 			padding-top: 9em;
+			padding-bottom: 12em;
 		}
 
 		.wrapper-style4 .row-special
