@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Miniport by HTML5 UP</title>
+		<title>What Arthur Does</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -14,10 +14,13 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/skel.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
+			
 		</noscript>
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
@@ -31,8 +34,9 @@
 						<!-- <li class="home"><a href="index.html">whatarthurcodes</a></li> -->
 						
 						<li ><a href="#app">Apps</a></li>
-						<li ><a href="ux.html">UX Design</a></li>
+						<li ><a href="#ux">UX Design</a></li>
 						<li ><a href="#about">About</a></li>
+					</ul>
 			</nav>
 
 		<!-- Home -->
@@ -54,13 +58,14 @@
 						 	<ul class="buttons vertical">
 						 		<br>
 						 		<br>
-							<li><a class="explore"href="#about"><b >Explore</b></a></li>
+							<li><a class="explore"href="#app"><b >Explore</b></a></li>
 						</ul>
 
 
 
 						</div>
 					</div>
+
 				</article>
 			</div>
 <!-- App -->
@@ -91,14 +96,18 @@
 
 				</article>
 			</div> -->
-<!-- TEST THING -->
+<!-- APP -->
 
 <div class="wrapper wrapper-style1">
 				<article id="app">
-					
+				<header>
+						<h2 class="name portfolio">Apps</h2>
+					</header>
+					<hr>
 				<div class="row">
 						<div class="4u">
-							<img src="images/buddyup_ss1.jpg">
+							<!-- <img src="images/buddyup_ss1.jpg"> -->
+							<div class="buddyup"></div>
 						</div>
 						<div class="8u descriptor">
 							<!-- <p><strong>App:</strong> Buddy Up <br> -->
@@ -113,19 +122,72 @@
 					<hr>
 					<div class="row">
 						<div class="4u">
-							<img src="images/dealmess.jpg">
+							<div class="dealme"></div>
 						</div>
 						<div class="8u descriptor">
 							<!-- <p><strong>App:</strong> Buddy Up <br> -->
 								<br>
 								<h1 class="title">Deal Me</h1>
-								<strong>Description:</strong> Web application that helps students locate others taking the same courses. <br>
-								<strong>Skills and Technologies used:</strong> HTML, CSS, JavaScript, Google Maps API, Bootstrap<br>
-								<strong>Arthur's Role:</strong> Main developer in utilizing google map's API as well creating the UI.</p>
+								<strong>Description:</strong> Android App that searches for sales and deals in cusomter's local area.<br>
+								<strong>Skills and Technologies used:</strong> Yellow Pages API, Java, XML, MongoDB<br>
+								<strong>Arthur's Role:</strong> Design and creating the UI.</p>
 								<br>
+								
+								<!-- Button trigger modal -->
+<button class="button button-alt" data-toggle="modal" data-target="#myModal">
+  Screen Shots
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">DealMe Screen Shots</h4>
+      </div>
+      <div class="modal-body ssdeal">
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
 								
 						</div>
 					</div>	
+
+
+								
+
+				</article>
+			</div>
+			<!-- UX -->
+
+<div class="wrapper wrapper-style1">
+				<article id="ux">
+						<header>
+						<h2 class="name portfolio">UX Design</h2>
+					</header>
+					<hr>
+					
+				<div class="row">
+						
+						<div class="6u descriptor garbage">
+							<!-- <p><strong>App:</strong> Buddy Up <br> -->
+								<h1 class="title">226-GARBAGE</h1>
+								<strong>Problem:</strong>Citizens of Stratford often forget to put out their waste. Furthermore they can't remember whether if its recycling, trash or organic waste.<br>
+								<strong>Description:</strong> 226-Garbage is a SMS based service that sends messages to remind users of when and what their garbage collection schedule is.<br>
+								<strong>Skills and Technologies used:</strong>User Centered Thiinking, Adobe Illustrator<br>
+								<strong>Arthur's Role:</strong> Having users in mind, Arthur composed the idea that citizen would not want to download an app as seniors would have probelms. Texting is much more friendly and widely used across age groups and thus makes people more likely to sign up for the process.</p>
+								<br>
+								
+						</div>
+						<div class="1u">
+							<div class="phone"></div>
+						</div>
+					</div>	
+					
 
 
 								
@@ -142,11 +204,13 @@
 						</div>
 						<div class="8u descriptor">
 							<h1 style="color:#888">About</h1>
-							<p><strong>Arthur Yan</strong> is in his third year studying Systems Design Engineering at the University of Waterloo. He is an experienced front-end developer and also is aspiring to be a User Centered Designer. With multiple successful projects complete, he continues his exploration.
-
-								An adventurer of technologies and magician of trades.</p>
+							<p class="aboutme"><strong></strong>Passionate, energetic and adventurous would be the start on how to describe Arthur’s career. Studying in his third year of Systems Design Engineering at the University of Waterloo, he developed a keen sense of designing UI.</p>
+							<BR>
+							<a href="resume.pdf" class="button button-alt">Check out Arthur's Resume</a>
 						</div>
-					</div>						
+
+					</div>	
+
 
 				</article>
 			</div>
@@ -227,12 +291,12 @@
 								<h3>Find me on ...</h3>
 								<ul class="social">
 									<!-- <li class="twitter"><a href="http://twitter.com/n33co" class="fa fa-twitter"><span>Twitter</span></a></li> -->
-									<li class="facebook"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+									<li class="facebook"><a href="https://www.facebook.com/arthur.yan.93" class="fa fa-facebook"><span>Facebook</span></a></li>
 								<!-- 	<li class="dribbble"><a href="http://dribbble.com/n33" class="fa fa-dribbble"><span>Dribbble</span></a></li> -->
-									<li class="linkedin"><a href="#" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
+									<li class="linkedin"><a href="http://www.linkedin.com/profile/view?id=288978034&trk=spm_pic" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
 									<!-- <li class="tumblr"><a href="#" class="fa fa-tumblr"><span>Tumblr</span></a></li>
 									<li class="googleplus"><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li> -->
-									<li class="github"><a href="http://github.com/n33" class="fa fa-github"><span>Github</span></a></li>
+									<li class="github"><a href="https://github.com/whatarthurcodes" class="fa fa-github"><span>Github</span></a></li>
 									<!--
 									<li class="rss"><a href="#" class="fa fa-rss"><span>RSS</span></a></li>
 									<li class="instagram"><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>

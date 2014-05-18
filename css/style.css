@@ -361,22 +361,22 @@
 				background: url('images/bg.png');
 			}
 
-			ul.social li.twitter:hover				{ background-color: #2DAAE4; }
-			ul.social li.facebook:hover				{ background-color: #3C5A98; }
-			ul.social li.dribbble:hover				{ background-color: #C4376B; }
-			ul.social li.linkedin:hover				{ background-color: #006599; }
-			ul.social li.tumblr:hover				{ background-color: #51718A; }
-			ul.social li.googleplus:hover			{ background-color: #DA2713; }
-			ul.social li.github:hover				{ background-color: #FAFAFA; }
-			ul.social li.rss:hover					{ background-color: #F2600B; }
-			ul.social li.instagram:hover			{ background-color: #E0D7C8; }
-			ul.social li.foursquare:hover			{ background-color: #39A3D4; }
-			ul.social li.skype:hover				{ background-color: #10BEF1; }
-			ul.social li.soundcloud:hover			{ background-color: #FE5419; }
-			ul.social li.youtube:hover				{ background-color: #BF2E25; }
-			ul.social li.blogger:hover				{ background-color: #FF6501; }
-			ul.social li.flickr:hover				{ background-color: #0062DB; }
-			ul.social li.vimeo:hover				{ background-color: #4C8AB0; }
+			ul.social li.twitter:before				{ background-color: #2DAAE4; }
+			ul.social li.facebook:before				{ background-color: #3C5A98; }
+			ul.social li.dribbble:before				{ background-color: #C4376B; }
+			ul.social li.linkedin:before				{ background-color: #006599; }
+			ul.social li.tumblr:before				{ background-color: #51718A; }
+			ul.social li.googleplus:before			{ background-color: #DA2713; }
+			ul.social li.github:before				{ background-color: #FAFAFA; }
+			ul.social li.rss:before					{ background-color: #F2600B; }
+			ul.social li.instagram:before			{ background-color: #E0D7C8; }
+			ul.social li.foursquare:before			{ background-color: #39A3D4; }
+			ul.social li.skype:before				{ background-color: #10BEF1; }
+			ul.social li.soundcloud:before			{ background-color: #FE5419; }
+			ul.social li.youtube:before				{ background-color: #BF2E25; }
+			ul.social li.blogger:before				{ background-color: #FF6501; }
+			ul.social li.flickr:before				{ background-color: #0062DB; }
+			ul.social li.vimeo:before				{ background-color: #4C8AB0; }
 
 			ul.social li:hover
 			{
@@ -1083,9 +1083,10 @@ text-align: center!important;
 	border-radius: 125px;
 	-webkit-border-radius: 125px;
 	-moz-border-radius: 125px;
-	background: url(../images/buddyup.jpg) no-repeat;
-	
-	cursor: pointer;
+	background: url(../images/buddyup.png) no-repeat;
+	border:solid;
+	border-color: black ;
+	cursor: default;
 	margin-left: auto;
    	 margin-right: auto;
 	}
@@ -1104,13 +1105,29 @@ text-align: center!important;
 	border-radius: 125px;
 	-webkit-border-radius: 125px;
 	-moz-border-radius: 125px;
-	background: url(../images/dealme.jpg) no-repeat;
-	
+	background: url(../images/deal_me.png) no-repeat;
+	border:solid;
+	border-color: black ;
 	cursor: default;
 	margin-left: auto;
    	 margin-right: auto;
 	}
 
+
+	.phone{
+		width: 250px;
+	height: 500px;
+	background: url(../images/phone.png) no-repeat;
+background-size: cover !important;
+	}
+
+	.ssdeal{
+		padding-left: auto;
+		padding-right: auto;
+		height: 500px;
+	background: url(../images/ssdeal.png) no-repeat;
+background-size: cover;
+	}
 	.about{
 		
 		margin-top: 20px;
@@ -1151,4 +1168,28 @@ text-align: center!important;
 
 	.title{
 		color: #888;
+	}
+
+	strong{
+		font-weight: 800;
+	}
+
+	.aboutme{
+
+		margin-right:12em;
+	}
+
+	.garbage{
+
+		margin-left: 1em;
+		margin-top: 5em;
+	}
+
+	.portfolio{
+		color: #888;
+	}
+
+	.modal-dialog{
+
+		margin-top: 50px!important;
 	}
