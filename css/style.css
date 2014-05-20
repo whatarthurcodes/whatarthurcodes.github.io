@@ -237,7 +237,7 @@
 	
 	.button
 	{
-		position: relative;
+		/*position: relative;
 		display: inline-block;
 		color: #fff;
 		text-decoration: none;
@@ -259,7 +259,7 @@
 		-webkit-transition: background-color .2s ease-in-out;
 		-o-transition: background-color .2s ease-in-out;
 		-ms-transition: background-color .2s ease-in-out;
-		transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;*/
 	}
 
 		.button:before
@@ -1030,7 +1030,7 @@ height: 8em;
 .banner2{
 
 background: black;
-height: 8em;
+height: 6em;
 width: 100%;
 color: white!important;
 }
@@ -1078,6 +1078,9 @@ text-align: center!important;
 	text-decoration: none !important;
 	color: white;
 	font-size: 30px!important;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
 }
 
 
@@ -1194,7 +1197,7 @@ background-size: cover;
 	.descriptor{
 		margin-bottom: 0px;
 		text-align: left;
-		color: #888;
+		color: black;
 	}
 
 	.thin{
@@ -1205,7 +1208,7 @@ background-size: cover;
 
 
 	.title{
-		color: #888;
+		color: black;
 	}
 
 	strong{
@@ -1269,4 +1272,19 @@ border-top: 1px solid #eee;
 	float: left;
 	margin-bottom: 1em;
 	margin-left: 2em;
+}
+
+.btn{
+
+	background-color: #393939!important;
+	color: white !important;
+	border: none!important;
+	margin: 2px;
+
+}
+
+.desktop{
+
+	overflow-x: hidden !important;
+
 }
