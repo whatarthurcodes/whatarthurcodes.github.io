@@ -1081,7 +1081,10 @@ text-align: center!important;
 	border-style: solid;
 	border-color: white;
 	border-width: 1px;
+	padding: 10px;
+
 }
+
 
 
 	.circular {
@@ -1288,3 +1291,78 @@ border-top: 1px solid #eee;
 	overflow-x: hidden !important;
 
 }
+
+.carousel-control {
+background-image: none !important;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+color: black;
+
+}
+
+#carousel-example-generic{
+	
+	padding-right: 50px;
+	margin-bottom: 60px;
+}
+
+.carousel-caption {
+/*position: relative!important;
+top:30px;*/
+color: black !important;
+position: default!important;
+}
+
+.
+.aboutmoi{
+
+	background-color: #f4f4f4 !important;
+}
+
+.carousel-indicators {
+bottom: 0!important;
+}
+
+.carousel-indicators li {
+/*background: black !important;*/
+border-width: 1px;
+border:solid;
+border-color: black!important;
+	
+		
+	
+}
+
+.carousel-indicators .active{
+
+background-color: black!imporant;
+
+}
+
+.uw{
+		width: 100px!important;
+	height: 100px!important;
+	background: url(../images/waterloo.jpg) no-repeat;
+background-size: cover !important;
+margin: none!important;
+	}
+
+	.soccer{
+		width: 100px!important;
+	height: 100px!important;
+	background: url(../images/soccer.svg) no-repeat;
+background-size: cover !important;
+	}
+
+	.leafs{
+		width: 100px!important;
+	height: 100px!important;
+	background: url(../images/leafs.png) no-repeat;
+background-size: cover !important;
+	}
+
+	.logo{
+
+		margin-top: 20px;
+	}
