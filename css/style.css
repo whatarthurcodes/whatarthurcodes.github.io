@@ -1085,6 +1085,13 @@ text-align: center!important;
 
 }
 
+.explore:hover {
+	opacity: 0.3;
+	color: white !important;
+	/*background: #383838;`*/
+	transition: background-color .2s ease-in-out;
+	}
+
 
 
 	.circular {
@@ -1346,6 +1353,8 @@ background-color: black!imporant;
 	background: url(../images/waterloo.jpg) no-repeat;
 background-size: cover !important;
 margin: none!important;
+margin-left: 1em;
+margin-right: 1em;
 	}
 
 	.soccer{
@@ -1353,6 +1362,8 @@ margin: none!important;
 	height: 100px!important;
 	background: url(../images/soccer.svg) no-repeat;
 background-size: cover !important;
+margin-left: 1em;
+margin-right: 1em;
 	}
 
 	.leafs{
@@ -1360,6 +1371,8 @@ background-size: cover !important;
 	height: 100px!important;
 	background: url(../images/leafs.png) no-repeat;
 background-size: cover !important;
+margin-left: 1em;
+margin-right: 1em;
 	}
 
 	.logo{
