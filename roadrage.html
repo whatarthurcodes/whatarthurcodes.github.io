@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Simple Tape | View Work</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="view-work">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+    <!-- Header -->
+   <div id="header">
+      <!-- <div id="loader"><img alt="" src="img/ajax-loader.gif" /></div> -->
+      <a href="index.html"><img alt="" class="logo" src="img/logo.png" /></a>
+      <ul class="main_navi">
+        <li><a class="transition" href="index.html">Home</a></li>
+        <li class="current"><a href="">Projects</a></li>
+        <li><a href="#info">About</a></li>
+        <li><a href="Arthur_Yan_Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <div class="view-work">
+        <div class="work_info_text">
+        <h1 class="title_work">Road Rage</h1>
+          <div class="description">
+            <p>Bio-sensor Product dedicated to detect road rage in order to diminish related driving accidents.
+            </p>
+          </div>
+          <div class="description"><h4>Link: <a href="#">http://budyup.herokuapp.com</a></h4></div>
+          
+          <h4>Tools:</h4>
+          <br>
+          <ul class="tools">
+            <li>HTML5+CSS3</li>
+            <li>TrueSense Bio Sensor</li>
+          </ul>
+          </div>
+          
+          <div class="title_img">
+            <!-- <h3 class="center_txt">The Opportunity</h3>
+            <p class="center_p">Drivers need a solution to notify them of dangerous anger levels to ensure safe roads.</p>
+            <br>
+
+            <h3 class="center_txt">Research</h3>
+            <p class="center_p">A survey was conducted in order to collect more data. The finidngs showed that drivers are aware of their anger.</p> -->
+
+
+            <img alt="" src="img/roadrage/proto1.png" class="center_img" />
+            <h3 class="center_txt">Steering Wheel Integration</h3>
+            <img alt="" src="img/roadrage/proto2.png" class="center_img" />
+            <h3 class="center_txt">Bracelet</h3>
+            <img alt="" src="img/roadrage/proto3.png" class="center_img" />
+            <h3 class="center_txt">Seatbelt</h3>
+            <img alt="" src="img/roadrage/proto4.png" class="center_img" />
+            <h3 class="center_txt">Steering Wheel Rendered</h3>
+
+            <img alt="" src="img/roadrage/webapp.png" class="center_img" />
+            <h3 class="center_txt">Webapp</h3>
+
+            
+            <img alt="" src="img/roadrage/final.png" class="center_img" />
+            <h3 class="center_txt">Final Prototype</h3>
+          </div>  
+
+
+        </div>
+      </div>
+      <div id="footer">&copy; Created by the one and only Arthur Yan 2014
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

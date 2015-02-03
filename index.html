@@ -1,418 +1,102 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport 2.5 by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>What Arthur Does</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/changephoto.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-51264119-1', 'whatarthurdoes.com');
-  ga('send', 'pageview');
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Simple Tape</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<!--[if IE]><link href="css/IE_input_bug.css" rel="stylesheet" type="text/css" /><![endif]-->
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lightbox-0.5.js"></script>
+<script type="text/javascript" src="js/input_clear.js"></script>
+<!-- Lightbox -->
+<script type="text/javascript">
+$(function () {
+    $('.latest_gallery a').lightBox();
+});
 </script>
-		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-			
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
-	</head>
-	<body>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(1000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(1000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(500, redirectPage);
+    });
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-						<!-- <li class="home"><a href="index.html">whatarthurcodes</a></li> -->
-						
-						<li ><a href="#app">Apps</a></li>
-						<li ><a href="#ux">UX Design</a></li>
-						<li ><a href="#about">About</a></li>
-					</ul>
-			</nav>
-
-		<!-- Home -->
-			<div class="wrapper wrapper-style1 wrapper-first bg">
-				<article class="container" id="top">
-					<div>
-						<!-- <div class="4u">
-							<span class="me image image-full"><img src="images/me.jpg" alt="" /></span>
-						</div> -->
-						<div>
-							<header>
-						<h2 class="name ">Arthur Yan</h2>
-					</header>
-				
-					<p>Front End Developer & User Centered Designer</p>
-
-						 
-						 	<ul class="buttons vertical">
-						 		<br>
-						 		<br>
-						 		<br>
-						 		<br>
-						 		<br>
-						 		<br>
-						 		<br>
-						 		<br>
-							<li><a class="explore"href="#app"><b>Explore</b></a></li>
-						</ul>
-
-
-
-						</div>
-					</div>
-
-				</article>
-			</div>
-<!-- App -->
-			<!-- <div class="wrapper wrapper-style1 wrapper-first">
-				<article>
-					
-				<div class="row">
-						<div class="4u">
-							<a href="http://budyup.herokuapp.com"><div class="buddyup"></div></a>
-						</div>
-						<div class="8u descriptor">
-							
-								
-								<strong>Description:</strong>Web application that helps students locate others taking the same courses. <br>
-								<strong>Skills and Technologies used:</strong> HTML, CSS, JavaScript, Google Maps API, Bootstrap<br>
-								<strong>Arthur's Role:</strong> Main developer in utilizing google map's API as well creating the UI.</p>
-						</div>
-					</div>	
-
-					<div class="row">
-						<div class="4u">
-							<div class="dealme"></div>
-						</div>
-						<div class="8u">
-							<p><strong>Deal Me</strong> is an Android app that searches for local deals in the customer’s area. It was developed during McHacks at McGill University in February 2014. The app utilizes the Yellow Pages API to search for sales at retail stores. Arthur played a strong role in creating the UI for the app.</p>
-						</div>
-					</div>						
-
-				</article>
-			</div> -->
-<!-- APP -->
-
-<div class="wrapper wrapper-style1 nomargin thinner">
-				<article id="app">
-				<div class="banner2"><header >
-						<br>
-						<h2 class="name portfolio">Apps</h2>
-					</header></div>
-					
-					<hr>
-
-				<div class="row">
-						<div class="4u">
-							<!-- <img src="images/buddyup_ss1.jpg"> -->
-							<div class="buddyup"></div>
-						</div>
-						<div class="8u descriptor">
-							<!-- <p><strong>App:</strong> Buddy Up <br> -->
-								<h1 class="title">Buddy Up</h1>
-								<strong>Description:</strong> Web application that helps students locate others taking the same courses. <br>
-								<strong>Skills and Technologies used:</strong> HTML, CSS, JavaScript, Google Maps API, Bootstrap<br>
-								<strong>Arthur's Role:</strong> Main developer in utilizing google map's API and building UI.
-								<br>
-								<p></p>
-								<a href="http://budyup.herokuapp.com" class="btn btn-default btn-lg">Demo</a><br><br>
-								<p>Buddy Up was developed at <a href="http://www.mhacks.org/">mHacks</a>, a hackathon in Michigan.</p>
-						</div>
-					</div>	
-					<hr>
-					<div class="row">
-						<div class="4u">
-							<div class="dealme"></div>
-						</div>
-						<div class="8u descriptor">
-							<!-- <p><strong>App:</strong> Buddy Up <br> -->
-								<br>
-								<h1 class="title">Deal Me</h1>
-								<strong>Description:</strong> Android App that searches for sales and deals in customer's local area.<br>
-								<strong>Skills and Technologies used:</strong> Yellow Pages API, Java, XML, MongoDB<br>
-								<strong>Arthur's Role:</strong> Create design including lgoo and background and building the UI.<p></p>
-
-								
-								<!-- Button trigger modal -->
-<button class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModal">Screen Shots</button><br><br>
-  
-<p>Deal Me was developed at <a href="hhttp://mchacks.io/">McHacks</a>, Canada's largest hackathon.</p>
-</div>
-					</div>	
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Home Page</h4>
-      </div>
-       <div class="modal-body dealss"></div>
-       <br>
-       
-       <div class="center">Deals Page</div>
-       <br>
-      <div class="modal-body ssdeal">
-        
-      </div>
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="home">
+<div id="container">
+  <div id="content">
+    <!-- Header -->
+    <div id="header">
+      <!-- <div id="loader"><img alt="" src="img/ajax-loader.gif" /></div> -->
+      <a href="index.html"><img alt="" class="logo" src="img/logo.png" /></a>
+      <ul class="main_navi">
+        <li class="current"><a class="transition" href="index.html">Home</a></li>
+        <li><a href="#best_work">Projects</a></li>
+        <li><a href="#info">About</a></li>
+        <li><a href="Arthur_Yan_Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
       <br>
-     
-      
-    </div>
-  </div>
-</div>
+      <h1 id="name">ARTHUR YAN</h1> </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <!-- <div id="top_content">
+        <div class="main_img"> <a class="transition" href="view-work.html"><img alt="" src="img/main_img1.png" /></a> </div>
+      </div> -->
+      <!-- Our best work -->
+      <div id="best_work">
+        <div class="best_work">
+          <h3>Projects I've worked on</h3>
+          <div><a href="roadrage.html"><img alt="" class="transition" src="img/best_work/roadrage.png" /></a><h2 class="subtitle">Road Rage</h2></div>
 
-								
-						</div>
-					</div>	
+          <div><a class="transition" href="garbage.html"><img alt="" src="img/best_work/garbage.png" /></a><h2 class="subtitle">226-GAR-BAGE</h2></div>
 
+          <div class="last_img"><a class="transition" href="swedish.html"><img alt="" src="img/best_work/sweden.png" /></a><h2 class="subtitle">Swedish Translator</h2></div>
 
-								
+           <div><a class="transition" href="buddyup.html"><img alt="" src="img/best_work/buddyup.png" /></a><h2 class="subtitle">BUDDY UP</h2></div>
 
-				</article>
-			</div>
-			<!-- UX -->
+          <div><a class="transition" href="dealme.html"><img alt="" src="img/best_work/dealme.png" /></a> <a class="transition" href="view-work.html"></a> </div>
 
-<div class="wrapper wrapper-style1 thinner">
-				<article id="ux">
-					<div class="banner2 thinner"><header >
-						<br>
-						<h2 class="name portfolio">UX Design</h2>
-					</header></div>
-					
-					<hr>
-					
-				<div class="row">
-						
-						<div class="6u descriptor garbage">
-							<!-- <p><strong>App:</strong> Buddy Up <br> -->
-								<h1 class="title">226-GAR-BAGE</h1>
-								<strong>Problem:</strong> Citizens of Stratford often forget to put out their waste. Furthermore they can't remember whether if its recycling, trash or organic waste.<br><br>
-								<strong>Solution:</strong> 226-Gar-bage is a SMS based service that sends messages to remind users of when and what their garbage collection schedule is. Users simply sign up by sending in their adress, afterwards they will be reminded the night before of what type of waste (recycling, gargage, green waste) to put out. Furthermore, the service can provide information about trash that users may not know how to dispose of. Check out the mock-up sample shown on an iphone.<br><br>	
-								
-								<strong>Advantages:</strong> Solutions that others came to invovled building a mobile application. This is a fundamental problem as text messaging is a more widely used technology. It is not restricted to age group as senior citizens will still have the knowledge to use this technology. Lastly users without a smart phone are not excluded.<br><br>
-								
-								<strong>Arthur's Role:</strong> Brain storming idea to utilize text messaging over creating an mobile app. Creating reply text-messages to make service easy to use and intuitive.    <br><br>
-								<strong>Skills and Technologies used:</strong> User Centered Thinking, Adobe Illustrator, MS Powerpoint<br><br>
-								
-								<p>226-Gar-Bage was developed at <a href="https://uwaterloo.ca/stratford-campus/conferences/uxperience-design-camp-2013-stratford">uXperience Design Camp</a>, a learning experience hosted by the University of Waterloo to give students the opportunity to create a viable solution to a real problem utilzing methodologies based on UX.</p>						</div>
-						<!-- <div class="3u">
-							<div id="thephone" class="phone"></div>
-						</div>
-						<div class="2u">
-							<br>
-							<div id="sign"class="btn btn-default btn-lg try">Sign Up</div>
-							<div id="reminder"class="btn btn-default btn-lg try">Reminder Text</div>
-							<div id="throw"class="btn btn-default btn-lg try">Waste Classification</div>
-						</div> -->
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> <h4>Sample Mock-Up</h1>
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <div id="thephone" class="phone"></div>
-      <div class="carousel-caption">
-        Signing up for the service
+          <!-- <div class="last_img"><a class="transition" href="view-work.html"><img alt="" src="img/best_work/6.png" /></a> <a class="transition" href="swedish.html"></a> </div> -->
+        </div>
       </div>
-    </div>
-  	<div class="item">
-      <div id="thephone" class="phone2"></div>
-      <div class="carousel-caption">
-        Weekly Reminder Text
+      <!-- How to Contact Us, What we do -->
+      <div class="line"></div>
+      <div id="info">
+        <div class="info_item float">
+          <h3>About</h3>
+            <p>
+            Hi, my name is Arthur and I am in my 4th year studying <a href="https://uwaterloo.ca/systems-design-engineering/">Systems Design Engineering</a> at the University of Waterloo. I've had 2 years of working experience at companies including Datadog, Genesys and Richmedia in various roles including software engineering.
+            <br><br>
+
+            In my spare time, I am a sports enthusiasts and you will find me  playing soccer or ultimate frisbee. </p>
+        </div>
+        <div class="info_item">
+        <img src="img/me.jpg">          
+        </div>
       </div>
-    </div>
-    <div class="item">
-      <div id="thephone" class="phone3"></div>
-      <div class="carousel-caption">
-        Waste Diposal Information
+        
+       <div id="footer">&copy; Created by the one and only Arthur Yan 2014
       </div>
     </div>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
 </div>
-
-					</div>	
-					
-
-
-								
-
-				</article>
-			</div>
-		<!-- About -->
-			<div class="wrapper wrapper-style1 aboutmoi">
-				<article id="about">
-					
-				<div class="row">
-						<div class="4u">
-							<div class="circular"></div>
-						</div>
-						<div class="5u descriptor">
-							<h1 >About</h1>
-							<p><strong></strong>Passionate, energetic and adventurous are just a few words to describe Arthur. He is currently studying <a href="https://uwaterloo.ca/systems-design-engineering/">Systems Design Engineering</a> at the University of Waterloo. Through four succesful work terms, he has gained skills including coding, designing and quality assuarance. 
-							<br><br>
-
-							In his spare time, you can find him on a field either playing soccer or tossing a frisbee with the Varsity team. He also desprately cheers for the Toronto Maple Leafs. 
-
-							</p>
-							<a href="Arthur_Yan_Resume.pdf" class="btn btn-default btn-lg">Download Resume</a>
-							
-							<div class="row logo bot">
-							<div class="uw"></div>
-							<div class="soccer"></div>
-							<div class="leafs"></div>
-							<div>
-							
-							
-						</div>
-
-					</div>	
-
-
-				</article>
-			</div>
-
-		<!-- Portfolio -->
-			<!-- <div class="wrapper wrapper-style3">
-				<article id="portfolio">
-					<header>
-						<h2>Awesome work makes happy clients.</h2>
-						<span>Proin odio consequat  sapien vestibulum ipsum primis sed amet consequat lorem dolore feugiat lorem ipsum dolore.</span>
-					</header>
-					<div class="container">
-						<div class="row">
-							<div class="12u">
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://flypixel.com/generic-smartphone/8949517882265310" class="image image-full"><img src="images/portfolio01.jpg" alt="" /></a>
-									<h3><a href="http://flypixel.com/generic-smartphone/8949517882265310">Magna feugiat</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio02.jpg" alt="" /></a>
-									<h3><a href="http://flypixel.com/n33">Veroeros primis</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://flypixel.com/wood-ui-kit/3574765984616310" class="image image-full"><img src="images/portfolio03.jpg" alt="" /></a>
-									<h3><a href="http://flypixel.com/wood-ui-kit/3574765984616310">Lorem ipsum</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://flypixel.com/n33-pattern-set-1/3522389001865317" class="image image-full"><img src="images/portfolio04.jpg" alt="" /></a>
-									<h3><a href="http://flypixel.com/n33-pattern-set-1/3522389001865317">Tempus dolore</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://flypixel.com/cityscape/9803996277226316" class="image image-full"><img src="images/portfolio05.jpg" alt="" /></a>
-									<h3><a href="http://flypixel.com/cityscape/9803996277226316">Feugiat aliquam</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-							<div class="4u">
-								<article class="box box-style2">
-									<a href="http://flypixel.com/n33" class="image image-full"><img src="images/portfolio06.jpg" alt="" /></a>
-									<h3><a href="http://flypixel.com/n33">Sed amet ornare</a></h3>
-									<p>Ornare nulla proin odio consequat.</p>
-								</article>
-							</div>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button button-big">Get in touch with me</a>
-					</footer>
-				</article>
-			</div> -->
-
-		<!-- Contact -->
-			<div class="wrapper wrapper-style4  thin">
-				<article id="contact" class="container small">
-				
-						<div class="row topper">
-							<div class="12u">
-								
-								<h3>Email me: arthur.yan3@gmail.com or <br>Find me on ...</h3>
-								<ul class="social">
-									<!-- <li class="twitter"><a href="http://twitter.com/n33co" class="fa fa-twitter"><span>Twitter</span></a></li> -->
-									<li class="facebook"><a href="https://www.facebook.com/arthur.yan.93" class="fa fa-facebook"><span>Facebook</span></a></li>
-								<!-- 	<li class="dribbble"><a href="http://dribbble.com/n33" class="fa fa-dribbble"><span>Dribbble</span></a></li> -->
-									<li class="linkedin"><a href="http://www.linkedin.com/profile/view?id=288978034&trk=spm_pic" class="fa fa-linkedin"><span>LinkedIn</span></a></li>
-									<!-- <li class="tumblr"><a href="#" class="fa fa-tumblr"><span>Tumblr</span></a></li>
-									<li class="googleplus"><a href="#" class="fa fa-google-plus"><span>Google+</span></a></li> -->
-									<li class="github"><a href="https://github.com/whatarthurcodes" class="fa fa-github"><span>Github</span></a></li>
-									<!--
-									<li class="rss"><a href="#" class="fa fa-rss"><span>RSS</span></a></li>
-									<li class="instagram"><a href="#" class="fa fa-instagram"><span>Instagram</span></a></li>
-									<li class="foursquare"><a href="#" class="fa fa-foursquare"><span>Foursquare</span></a></li>
-									<li class="skype"><a href="#" class="fa fa-skype"><span>Skype</span></a></li>
-									<li class="soundcloud"><a href="#" class="fa fa-soundcloud"><span>Soundcloud</span></a></li>
-									<li class="youtube"><a href="#" class="fa fa-youtube"><span>YouTube</span></a></li>
-									<li class="blogger"><a href="#" class="fa fa-blogger"><span>Blogger</span></a></li>
-									<li class="flickr"><a href="#" class="fa fa-flickr"><span>Flickr</span></a></li>
-									<li class="vimeo"><a href="#" class="fa fa-vimeo"><span>Vimeo</span></a></li>
-									-->
-								</ul>
-								
-							</div>
-						</div>
-					
-					<footer class="thin">
-						<ul id="copyright">
-							<li>&copy; Created by the one and only Arthur Yan 2014</li>
-						</ul>
-					</footer>
-				</article>
-			</div>
-
-
-	</body>
+</body>
 </html>

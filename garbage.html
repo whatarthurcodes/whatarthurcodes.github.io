@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Simple Tape | View Work</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<head>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<!-- Loading -->
+<script type="text/javascript">
+$(function () {
+    $('.main_content, .main_navi').hide();
+    $(window).load(function () {
+        $('#loader').fadeOut();
+        $('.main_content, .main_navi').fadeIn(2000);
+    });
+});
+$(document).ready(function () {
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
+    $("a.transition").click(function (event) {
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);
+    });
+
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+</script>
+</head>
+<body id="view-work">
+<div id="container">
+  <div class="stripe"></div>
+  <div id="content">
+    <!-- Header -->
+    <div id="header">
+      <!-- <div id="loader"><img alt="" src="img/ajax-loader.gif" /></div> -->
+      <a href="index.html"><img alt="" class="logo" src="img/logo.png" /></a>
+      <ul class="main_navi">
+        <li><a class="transition" href="index.html">Home</a></li>
+        <li class="current"><a href="">Projects</a></li>
+        <li><a href="#info">About</a></li>
+        <li><a href="Arthur_Yan_Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <!-- Top Content -->
+    <div class="main_content">
+      <div class="view-work">
+        <div class="work_info_text">
+        <h1 class="title_work">226-GAR-BAGE</h1>
+          <div class="description">
+            <p>Buddy Up is a web application that helps students locate others taking the same courses. It was built as a project at mHacks, a hackthon in Detroit.
+            </p>
+          </div>
+          <div class="description">
+            <h4 class="description">Problem:</h4>
+            <p>
+            Citizens of Stratford often forget to put out their waste. Furthermore they can't remember whether if its recycling, trash or organic waste.
+            </p>
+            <h4 class="description">Solution:</h4>
+            <p>
+            226-Gar-bage is a SMS based service that sends messages to remind users of when and what their garbage collection schedule is. Users simply sign up by sending in their adress, afterwards they will be reminded the night before of what type of waste (recycling, gargage, green waste) to put out. Furthermore, the service can provide information about trash that users may not know how to dispose of. Check out the mock-up sample shown on an iphone.
+            </p>
+            <h4 class="description">Advantages:</h4>
+            <p>
+             Solutions that others came to invovled building a mobile application. This is a fundamental problem as text messaging is a more widely used technology. It is not restricted to age group as senior citizens will still have the knowledge to use this technology. Lastly users without a smart phone are not excluded.
+            </p>
+          </div>
+          
+          <h4>Tools:</h4>
+          <br>
+          <ul class="tools">
+            <li>User Centered Design</li>
+            <li>Adoble Illustrator</li>
+            <li>MS Powerpoint</li>
+          </ul>
+          </div>
+
+      <div class="title_img">
+        <h3 class="center_txt">Registration</h3>
+        <img alt="" src="img/garbage/phone.png" class="center_img" />
+        <h3 class="center_txt">Weekly Reminder</h3>
+        <img alt="" src="img/garbage/phone2.png" class="center_img"/>
+        <h3 class="center_txt">Q&A</h3>
+        <img alt="" src="img/garbage/phone3.png" class="center_img"/>
+      </div>  
+  
+        </div>
+        </div>
+      </div>
+
+      <div id="footer">&copy; Created by the one and only Arthur Yan 2014
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
